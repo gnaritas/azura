@@ -1,0 +1,12 @@
+{
+  "site": "azura",
+  "recorded": "2026-11-22",
+  "purpose": "source for JSON-LD geo in build_pages.py",
+  "chosen": {"lat": 43.2005428, "lon": -76.0522204},
+  "method": "Google Maps keyless output=embed q=6777+Lakeshore+Rd,+Cicero,+NY+13039 — page state carries the resolved point and renders the exact query address string; curl with Chrome UA, 2026-11-22",
+  "cross_checks": [
+    {"source": "OSM Nominatim 'Lakeshore Yacht & Country Club' (the clubhouse Azura occupies)", "lat": 43.20162, "lon": -76.05271, "note": "agrees within ~40m"},
+    {"source": "Census geocoder", "note": "NO MATCH for 6777 Lakeshore Rd variants — street centerline coverage gap, not an address conflict"}
+  ],
+  "caveat": "GBp card has no lat/long field exposed via the search UI used; point chosen is Google's own resolution of the published address — the same engine the map embed renders."
+}
